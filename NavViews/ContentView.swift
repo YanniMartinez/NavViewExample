@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var isShowingFirstView = false
     var body: some View {
+        
         VStack {
             NavigationView {
-                VStack{
+                 VStack{
                     Button(action: {
                         isShowingFirstView = true
                     }){
@@ -22,12 +23,26 @@ struct ContentView: View {
                     .sheet(isPresented: $isShowingFirstView) {
                         Info(isPresented: $isShowingFirstView)
                     }
+                     
+                     Button(action: {
+                         isShowingFirstView = true
+                     }){
+                         Text("Nuevo botón ").font(.title)
+                         
+                     }
+                     .sheet(isPresented: $isShowingFirstView) {
+                         Nuevo(isPresented: $isShowingFirstView)
+                     }
                 }
+                
+                
+                
             }
-        }
-        .padding()
+        }.padding()
+        
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
