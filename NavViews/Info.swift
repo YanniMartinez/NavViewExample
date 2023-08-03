@@ -13,7 +13,7 @@ struct Info: View {
     
     var body: some View {
         VStack{
-            Button(action: {
+            Button(role: .destructive ,action: {
                 isPresented = false
             }){
                 Image("close")
