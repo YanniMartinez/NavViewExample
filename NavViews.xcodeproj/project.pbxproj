@@ -12,6 +12,7 @@
 		0116A6222A7C3DF900B80172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0116A6212A7C3DF900B80172 /* Assets.xcassets */; };
 		0116A6252A7C3DF900B80172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0116A6242A7C3DF900B80172 /* Preview Assets.xcassets */; };
 		0116A62C2A7C3E4400B80172 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A62B2A7C3E4400B80172 /* Info.swift */; };
+		069366B02A7C574500E3BBEB /* MoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069366AF2A7C574500E3BBEB /* MoreInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0116A6212A7C3DF900B80172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0116A6242A7C3DF900B80172 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0116A62B2A7C3E4400B80172 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		069366AF2A7C574500E3BBEB /* MoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				0116A61D2A7C3DF400B80172 /* NavViewsApp.swift */,
 				0116A61F2A7C3DF400B80172 /* ContentView.swift */,
 				0116A62B2A7C3E4400B80172 /* Info.swift */,
+				069366AF2A7C574500E3BBEB /* MoreInfo.swift */,
 				0116A6212A7C3DF900B80172 /* Assets.xcassets */,
 				0116A6232A7C3DF900B80172 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069366B02A7C574500E3BBEB /* MoreInfo.swift in Sources */,
 				0116A62C2A7C3E4400B80172 /* Info.swift in Sources */,
 				0116A6202A7C3DF400B80172 /* ContentView.swift in Sources */,
 				0116A61E2A7C3DF400B80172 /* NavViewsApp.swift in Sources */,

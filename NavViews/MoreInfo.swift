@@ -1,13 +1,12 @@
 //
-//  Info.swift
-//  navegationTabs
+//  MoreInfo.swift
+//  NavViews
 //
-//  Created by MacBook 26 on 01/08/23.
+//  Created by Wendy on 03/08/23.
 //
-
 import SwiftUI
 
-struct Info: View {
+struct MoreInfo: View {
     
     @Binding var isPresented: Bool
     
@@ -25,12 +24,10 @@ struct Info: View {
             .cornerRadius(10)
             
             VStack{
-                Text("Hola 🐣").font(.title)
+                Text("Wendy Sánchez Cortés 🦋").font(.title)
                 Spacer()
             }
             
         }
     }
 }
-
-

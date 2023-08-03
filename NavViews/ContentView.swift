@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isShowingFirstView = false
+    @State private var isShowingSecondView = false
+    
     var body: some View {
         VStack {
             NavigationView {
-                VStack{
+                VStack(spacing: 100){
                     Button(action: {
                         isShowingFirstView = true
                     }){
@@ -22,6 +24,19 @@ struct ContentView: View {
                     .sheet(isPresented: $isShowingFirstView) {
                         Info(isPresented: $isShowingFirstView)
                     }
+                    
+                    
+                    Button(action: {
+                        isShowingSecondView = true
+                    }){
+                        Text("Also click here  🍀").font(.title)
+                        
+                    }
+                    .sheet(isPresented: $isShowingSecondView) {
+                        MoreInfo(isPresented: $isShowingSecondView)
+                    }
+                    
+                    
                 }
             }
         }
