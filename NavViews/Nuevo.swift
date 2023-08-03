@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct Info: View {
+struct Nuevo: View {
     
     @Binding var isPresented: Bool
     
     var body: some View {
         VStack{
-            Button(role: .destructive ,action: {
+            Button(action: {
                 isPresented = false
             }){
-                Image("cruz")
+                Image("close")
                     .resizable()
                     .frame(width: 30,height: 30)
                     .position(x:300, y:30)
@@ -25,7 +25,7 @@ struct Info: View {
             .cornerRadius(10)
             
             VStack{
-                Text("Hola 🐣").font(.title)
+                Text("Hola de nuevo 🐣").font(.title)
                 Spacer()
             }
             

@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Info: View {
+struct infodos: View {
     
-    @Binding var isPresented: Bool
+    @Binding var isPresente: Bool
     
     var body: some View {
         VStack{
-            Button(role: .destructive ,action: {
-                isPresented = false
+            Button(action: {
+                isPresente = false
             }){
                 Image("cruz")
                     .resizable()
@@ -25,7 +25,7 @@ struct Info: View {
             .cornerRadius(10)
             
             VStack{
-                Text("Hola 🐣").font(.title)
+                Text("Jonathan").font(.title)
                 Spacer()
             }
             
