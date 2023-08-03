@@ -13,9 +13,9 @@ struct MyView: View {
     
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [.accentColor, .white]), startPoint: .bottom, endPoint: .top)
+            LinearGradient(gradient: Gradient(colors: [.green, .white]), startPoint: .bottom, endPoint: .top)
             VStack{
-                Button(action: {
+                Button(role: .destructive ,action: {
                     isPresented = false
                 }){
                     Text("Cerrar")
@@ -25,6 +25,12 @@ struct MyView: View {
                 
                 VStack{
                     Text("Hola mi nombre es David :D").font(.title)
+                }
+                
+                VStack{
+                    Image("Dafget")
+                        .resizable()
+                        .frame(width: 100,height: 100)
                 }
                 
             }
