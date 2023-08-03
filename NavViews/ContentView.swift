@@ -41,7 +41,7 @@ struct ContentView: View {
                         
                     }
                     .sheet(isPresented: $isShowingSecondView) {
-                        infodos(isPresente: $isShowingSecondView)
+                        Info(isPresented: $isShowingSecondView)
                     }
                 
                 
