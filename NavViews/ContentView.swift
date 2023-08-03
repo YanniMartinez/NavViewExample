@@ -1,19 +1,29 @@
 //
 //  ContentView.swift
-//  NavViews
+//  navegationTabs
 //
-//  Created by MacBook 26 on 03/08/23.
+//  Created by MacBook 26 on 01/08/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingFirstView = false
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            NavigationView {
+                VStack{
+                    Button(action: {
+                        isShowingFirstView = true
+                    }){
+                        Text("Click here🚀").font(.title)
+                        
+                    }
+                    .sheet(isPresented: $isShowingFirstView) {
+                        Info(isPresented: $isShowingFirstView)
+                    }
+                }
+            }
         }
         .padding()
     }
