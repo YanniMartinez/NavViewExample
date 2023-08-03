@@ -27,7 +27,7 @@ struct ContentView: View {
                     Button(action: {
                         isShowingMyView = true
                     }){
-                        Text("Clikeale Aqui😁").font(.title)
+                        Text("Clikeale Aqui😁").font(.title).foregroundColor(.green.opacity(1))
                         
                     }
                     .sheet(isPresented: $isShowingMyView) {

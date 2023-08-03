@@ -21,10 +21,10 @@ struct MyView: View {
                     Text("Cerrar")
                         .font(.title)
                 }
-                .foregroundColor(.accentColor)
+                .foregroundColor(.green.opacity(0.75))
                 
                 VStack{
-                    Text("Hola mi nombre es David :D").font(.title)
+                    Text("Hola mi nombre es David :D").font(.title).foregroundColor(.cyan)
                 }
                 
                 VStack{
