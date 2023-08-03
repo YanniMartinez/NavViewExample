@@ -145,6 +145,7 @@
 			files = (
 				0116A62C2A7C3E4400B80172 /* Info.swift in Sources */,
 				0116A6202A7C3DF400B80172 /* ContentView.swift in Sources */,
+				FB8720A02A7C5D58000931A3 /* infodos.swift in Sources */,
 				0116A61E2A7C3DF400B80172 /* NavViewsApp.swift in Sources */,
 				FBDBE4432A7C5C4B00008291 /* Nuevo.swift in Sources */,
 			);
