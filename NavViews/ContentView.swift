@@ -20,6 +20,8 @@ struct ContentView: View {
                         Text("Click here🚀").font(.title)
                         
                     }
+                    //Pruebas de que funciona
+                    //Todo en orden
                     .sheet(isPresented: $isShowingFirstView) {
                         Info(isPresented: $isShowingFirstView)
                     }
