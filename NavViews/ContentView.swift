@@ -15,6 +15,10 @@ struct ContentView: View {
             NavigationView {
                 VStack{
                     Text("Hello").font(.title)
+                    Image("cat")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200, height: 200)
                     
                     Button(action: {
                         isShowingFirstView = true
