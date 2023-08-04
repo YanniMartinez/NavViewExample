@@ -14,6 +14,8 @@ struct ContentView: View {
         VStack {
             NavigationView {
                 VStack{
+                    Text("Hello").font(.title)
+                    
                     Button(action: {
                         isShowingFirstView = true
                     }){
